@@ -8,7 +8,7 @@ const TodoList = ({ todos, deleteTodo }) => {
         { todos.length === 0
           ? <div>No todos yet</div>
           : todos.map(todo =>
-            <TodoItem key={todo} todo={todo} deleteTodo={deleteTodo} />)
+            <TodoItem key={todo.id} todo={todo} deleteTodo={deleteTodo} />)
         }
       </ul>
     </div>

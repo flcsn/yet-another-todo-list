@@ -3,13 +3,12 @@ import React from 'react'
 const TodoItem = ({ todo, deleteTodo }) => {
   const handleClick = (event) => {
     event.preventDefault()
-    console.log('clicked!', todo)
     deleteTodo(todo)
   }
   return (
     <div className='todo-item'>
       <div>
-        {todo}
+        {todo.name}
       </div>
       <div className='btn-container'>
         <button onClick={(event) => handleClick(event)}>
