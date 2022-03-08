@@ -1,14 +1,12 @@
 import React from 'react'
 
-const TodoList = () => {
+const TodoList = ({ todos }) => {
   return (
     <div>
       <ul>
-        <li>This</li>
-        <li>Is</li>
-        <li>The</li>
-        <li>Todo</li>
-        <li>List</li>
+        { todos.length === 0
+          ? <div>No todos yet</div>
+          : todos.map(todo => <li key={todo}>{todo}</li>)}
       </ul>
     </div>
   )

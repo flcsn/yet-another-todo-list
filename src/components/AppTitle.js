@@ -3,7 +3,7 @@ import React from 'react'
 const AppTitle = () => {
   return (
     <div>
-      <h2>This is the App Title</h2>
+      <h2>Yet Another Todo List</h2>
     </div>
   )
 }
