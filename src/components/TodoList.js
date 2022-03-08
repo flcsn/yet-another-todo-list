@@ -6,7 +6,7 @@ const TodoList = ({ todos, deleteTodo }) => {
     <div className='container list-container'>
       <ul>
         { todos.length === 0
-          ? <li><div>No todos yet</div></li>
+          ? <li><div>Your list is empty!</div></li>
           : todos.map(todo =>
             <li key={todo.id} >
               <TodoItem todo={todo} deleteTodo={deleteTodo} />
