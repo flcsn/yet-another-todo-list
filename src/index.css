@@ -9,6 +9,16 @@
 html, body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.4;
-  color: var(--color-black);
   margin: 0;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+/* Colors */
+
+:root {
+  --color-black: #333333;
+  --color-white: #fbfbfb;
+  --color-gray: #a4a4a4;
+  --color-gray-light: #f2f2f2;
 }
