@@ -6,6 +6,7 @@ const TodoForm = ({ addNewTodo }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
+    if (input === '') return
     addNewTodo(input)
     setInput('')
   }
