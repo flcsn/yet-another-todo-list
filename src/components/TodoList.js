@@ -1,4 +1,5 @@
 import React from 'react'
+import TodoItem from './TodoItem'
 
 const TodoList = ({ todos }) => {
   return (
@@ -6,7 +7,7 @@ const TodoList = ({ todos }) => {
       <ul>
         { todos.length === 0
           ? <div>No todos yet</div>
-          : todos.map(todo => <li key={todo}>{todo}</li>)}
+          : todos.map(todo => <TodoItem key={todo} todo={todo} />)}
       </ul>
     </div>
   )

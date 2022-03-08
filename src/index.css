@@ -41,8 +41,20 @@ ul {
   margin: 0 auto;
 }
 
+.main-container > .container + .container {
+  margin: 10px 0;
+}
+
 .container {
   height: 100%;
   width: 100%;
   text-align: center;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--color-black);
+  border-radius: 10px;
+  padding: 10px 20px;
 }
