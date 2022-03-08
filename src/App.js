@@ -13,15 +13,12 @@ const App = () => {
       id: uuidv4(),
       name: todo
     }
-    console.log('adding', todoObj)
     const newTodos = todos.concat(todoObj)
     setTodos(newTodos)
   }
 
   const deleteTodo = (todo) => {
-    console.log('removing', todo)
     const newTodos = todos.filter(t => t.id !== todo.id)
-    console.log('setting new todos to', newTodos)
     setTodos(newTodos)
   }
 

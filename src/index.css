@@ -47,14 +47,18 @@ button {
   margin: 0 auto;
 }
 
-.main-container > .container + .container {
-  margin: 10px 0;
-}
-
 .container {
   height: 100%;
   width: 100%;
   text-align: center;
+}
+
+.container:first-child {
+  margin-bottom: 2em;
+}
+
+.container > ul > li {
+  margin-bottom: 10px;
 }
 
 .todo-item {
