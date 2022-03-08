@@ -1,13 +1,15 @@
 import React from 'react'
 import TodoItem from './TodoItem'
 
-const TodoList = ({ todos }) => {
+const TodoList = ({ todos, deleteTodo }) => {
   return (
     <div className='container'>
       <ul>
         { todos.length === 0
           ? <div>No todos yet</div>
-          : todos.map(todo => <TodoItem key={todo} todo={todo} />)}
+          : todos.map(todo =>
+            <TodoItem key={todo} todo={todo} deleteTodo={deleteTodo} />)
+        }
       </ul>
     </div>
   )

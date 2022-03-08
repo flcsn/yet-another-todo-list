@@ -12,10 +12,17 @@ const App = () => {
     setTodos(newTodos)
   }
 
+  const deleteTodo = (todo) => {
+    console.log('removing', todo)
+    const newTodos = todos.filter(t => t !== todo)
+    console.log('setting new todos to', newTodos)
+    setTodos(newTodos)
+  }
+
   return (
     <div className='main-container'>
       <AppTitle />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} deleteTodo={deleteTodo}/>
       <TodoForm addNewTodo={addNewTodo} />
     </div>
   )
