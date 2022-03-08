@@ -3,7 +3,7 @@ import React from 'react'
 const AppTitle = () => {
   return (
     <div className='container'>
-      <h2>Yet Another Todo List</h2>
+      <h1>Yet Another Todo List</h1>
     </div>
   )
 }

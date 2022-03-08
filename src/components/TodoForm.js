@@ -18,13 +18,16 @@ const TodoForm = ({ addNewTodo }) => {
           type='text'
           value={input}
           onChange={({ target }) => setInput(target.value)}
-          placeholder='Type your todos here!'
+          placeholder='Start here!'
           autoComplete='off'
           autoFocus
+          maxLength='40'
         />
         <div className='btn-container'>
           <button type='submit'>
-            <AiOutlineSend />
+            <div className='icon-container'>
+              <AiOutlineSend />
+            </div>
           </button>
         </div>
       </form>
