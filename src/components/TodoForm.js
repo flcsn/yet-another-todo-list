@@ -18,7 +18,7 @@ const TodoForm = ({ addNewTodo }) => {
           type='text'
           value={input}
           onChange={({ target }) => setInput(target.value)}
-          placeholder='Start here!'
+          placeholder='Enter a todo!'
           autoComplete='off'
           autoFocus
           maxLength='40'

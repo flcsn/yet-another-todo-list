@@ -3,7 +3,7 @@ import TodoItem from './TodoItem'
 
 const TodoList = ({ todos, deleteTodo }) => {
   return (
-    <div className='container'>
+    <div className='container list-container'>
       <ul>
         { todos.length === 0
           ? <li><div>No todos yet</div></li>
