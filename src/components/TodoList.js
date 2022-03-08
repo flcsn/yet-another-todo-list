@@ -2,7 +2,7 @@ import React from 'react'
 
 const TodoList = ({ todos }) => {
   return (
-    <div>
+    <div className='container'>
       <ul>
         { todos.length === 0
           ? <div>No todos yet</div>

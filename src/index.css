@@ -14,6 +14,11 @@ html, body {
   background-color: var(--color-white);
 }
 
+ul {
+  list-style: none;
+}
+
+
 /* Colors */
 
 :root {
@@ -21,4 +26,23 @@ html, body {
   --color-white: #fbfbfb;
   --color-gray: #a4a4a4;
   --color-gray-light: #f2f2f2;
+}
+
+
+/* Styles */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
