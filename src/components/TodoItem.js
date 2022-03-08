@@ -11,7 +11,7 @@ const TodoItem = ({ todo, deleteTodo }) => {
       <div>
         {todo}
       </div>
-      <div className='delete-btn'>
+      <div className='btn-container'>
         <button onClick={(event) => handleClick(event)}>
           &times;
         </button>
